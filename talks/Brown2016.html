@@ -23,21 +23,39 @@
 	Lecture on Gaussian processes - Brown University, 2016
 </h1>
 
-<h3><i>Andreas Damianou, 16 Feb. 2016</i></h3>
+<h2><i>Andreas Damianou, 16 Feb. 2016</i></h2>
 
-<i>!! This website will be updated soon! Below is a preliminary version!!</i>
+<br>
+<h3>General Info: Accompanying code / tutorial in Python</h3>
+
+During the tutorial I will run a few examples of Gaussian processes implemented using the <a href="http://jupyter.org/">Jupyter Notebook</a> (a Python UI which runs and displays results within a browser). You might like to run the examples yourself beforehand, afterwards or even during the tutorial using your laptop. This is entirely optional, but playing with the code yourself will probably help you get a much better feeling of what's going on!
 <br><br>
-During the tutorial I will run a few examples of Gaussian processes using the <a href="http://jupyter.org/">Jupyter Notebook</a> (a Python UI which runs and displays results within a browser).
-<br><br>
-The (current version) of the notebook can be viewed (but not run) <a href="http://nbviewer.jupyter.org/github/adamian/adamian.github.io/blob/master/talks/Brown2016.ipynb">here</a> and can be downloaded (and run) <a href="http://adamian.github.io/talks/Brown2016.ipynb">from here</a>. If you want to download and run it locally, you can obtain the notebook here, but you will first have to install Python. For the last few steps of the tutorial we'll also use the GP package GPy, which can be installed following the instructions <a href="https://github.com/SheffieldML/GPy">here</a>. 
+The (current version) of the python notebook can be viewed <a href="http://nbviewer.jupyter.org/github/adamian/adamian.github.io/blob/master/talks/Brown2016.ipynb">here</a> and can be downloaded (and run) <a href="http://adamian.github.io/talks/Brown2016.ipynb">from here</a>. If you want to download and run it locally, you can obtain the notebook here, but you will first have to install Python (see next section). For the last few steps of the tutorial we'll also use the GP package GPy, see last section of this page. 
 <br><br>
 The code snippets of the notebook can be copied and pasted directly in the python terminal, but you can actually run them within the Jupyter Notebook from your browser (check <a href="http://jupyter-notebook-beginner-guide.readthedocs.org/en/latest/what_is_jupyter.html">here</a> about how to it, but basically you just need to open Jupyter and load the ipynb file).
 
 <br><br>
-<i>!! The notebook file will be updated soon, but you can start looking at the preliminary version already online!!</i>
 
+<h3>More details on installing Python</h3>
+It is recommended to install an integrated Python environment such as <a href="https://store.
+continuum.io/cshop/anaconda">Anaconda</a>. We will need also the python libraries <i>numpy, scipy (recommended: ver. 0.16)</i> and the convenient python interpeter <i>ipython</i>. Within anaconda, installing libraries is as easy as running <i>conda install numpy</i> from the terminal. For a specific version, try <i>conda install scipy=0.16</i>.
 
 <br>
+After installing Anaconda (follow specific instructions according to your OS on the software's website) you can start programming in Python through an iPython console. E.g. in Unix you can just type <i>ipython</i> in the console and in Windows you can navigate to Applications/Accessories/cmd and type <i>ipython</i> or you can open "anaconda Command Prompt" from "windows start".
+<br>
+Similarly, to open a specific notebook (such as the one provided for the lecture) you can launch <i>jupyter notebook file_name.ipynb</i> from the console.
+
+<br> 
+
+
+<h3>More details on installing GPy, a Gaussian process framework in Python </h3>
+GPy can be installed following the instructions <a href="https://github.com/SheffieldML/GPy">here</a>. 
+To summarize, after installing Python (e.g. Anaconda), type this in the terminal: <i>pip install GPy</i>. That's it! To make sure you installed it correctly, open an IPython terminal and type <i>import GPy</i> followed by <i>GPy.tests()</i>.
+
+<br>
+<br>
+<h3>Advertisment: Gaussian process Summer School in UK.</h3>
+If you enjoy the lectures and want to learn more, you might consider registering for one of the future Gaussian Process Summer Schools organized in Sheffield, England. This year, we'll probably include within the summer school a workshop on Uncertainty Quantification. Details on <a href="http://gpss.cc/">GPSS website</a>).
 
 </body>
 </html>
